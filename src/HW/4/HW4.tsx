@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import s from './HW4.module.css';
+import S from './HW4.module.css';
 import { Button } from './Button';
 import { Input } from './Input';
 
@@ -39,7 +39,7 @@ export const HW4 = () => {
       <ol id={'hw04-tasks'}>
         {texts.map((el, index) => {
           return (
-            <li key={index} id={`hw04-task-${index}`} className={index%2 ? s.chetNechet : ''}>
+            <li key={index} id={`hw04-task-${index}`} className={index%2 ? S.chetNechet : ''}>
               {el}
             </li>
           );
